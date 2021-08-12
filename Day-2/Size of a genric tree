@@ -1,0 +1,18 @@
+
+//have to run the contruct code again to dispaly this 
+// this is just a function
+
+public static int size(Node node)
+  {
+    int count = 0;
+    
+    for (Node child : node.children)
+    {
+        count = count + size(child);
+    }
+    
+    count = count + 1;
+    
+    return count;
+    
+  }
